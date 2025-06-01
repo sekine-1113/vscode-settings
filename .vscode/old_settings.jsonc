@@ -1,0 +1,217 @@
+{
+  "terminal.integrated.env.windows": {
+    "PSExecutionPolicyPreference": "Bypass"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+  "workbench.iconTheme": "material-icon-theme",
+  "files.autoGuessEncoding": true,
+  "files.autoSave": "off",
+  "explorer.confirmDragAndDrop": false,
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  // highlight indent
+  "highlightActiveIndentGuide": true,
+  // space trim
+  "files.trimTrailingWhitespace": true,
+  // C
+  "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 4}",
+  "[c]": {
+    // "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  // python
+  "python.languageServer": "Pylance",
+  "python.pythonPath": "C:\\Users\\sekin\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  "python.analysis.extraPaths": ["${workspaceFolder}/.venv/Lib/site-packages"],
+  // nim
+  "nim.project": [],
+  "nim.test-project": "",
+  "nim.buildOnSave": true,
+  "nim.buildCommand": "c",
+  "nim.lintOnSave": true,
+  "nim.logNimsuggest": false,
+  // d
+  "d.servedPath": "C:\\Users\\sekin\\AppData\\Roaming\\code-d\\bin\\serve-d.exe",
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "bracketPairColorizer.depreciation-notice": false,
+  "d.dubCompiler": "dmd.EXE",
+  "d.stdlibPath": "auto",
+  "d.dubPath": "C:\\D\\dmd2\\windows\\bin\\dub.exe",
+  "d.dcdClientPath": "C:\\Users\\sekin\\AppData\\Roaming\\code-d\\bin\\dcd-client.exe",
+  "d.dcdServerPath": "C:\\Users\\sekin\\AppData\\Roaming\\code-d\\bin\\dcd-server.exe",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "auto",
+  "git.autofetch": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "remote.SSH.remotePlatform": {
+    "133.43.7.133": "linux",
+    "db.cse.ce.nihon-u.ac.jp": "linux",
+    "machihapi_new": "linux",
+    "machihapi": "linux",
+    "kanazawa": "linux",
+    "ts-demo": "linux",
+    "ts-demo-db": "linux",
+    "db": "linux",
+    "shoudankaihatsu": "linux",
+    "shoudankaihatu_prod": "linux",
+    "ec2": "linux"
+  },
+  "markdown-pdf.highlightStyle": "default.css",
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -fexec-charset=cp932 -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "zig": "zig run",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python",
+    "perl": "perl",
+    "perl6": "perl6",
+    "ruby": "ruby",
+    "go": "go run",
+    "lua": "lua",
+    "groovy": "groovy",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash",
+    "fsharp": "fsi",
+    "csharp": "scriptcs",
+    "vbscript": "cscript //Nologo",
+    "typescript": "ts-node",
+    "coffeescript": "coffee",
+    "scala": "scala",
+    "swift": "swift",
+    "julia": "julia",
+    "crystal": "crystal",
+    "ocaml": "ocaml",
+    "r": "Rscript",
+    "applescript": "osascript",
+    "clojure": "lein exec",
+    "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+    "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+    "racket": "racket",
+    "scheme": "csi -script",
+    "ahk": "autohotkey",
+    "autoit": "autoit3",
+    "dart": "dart",
+    "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+    "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+    "haskell": "runghc",
+    "nim": "nim compile --verbosity:0 --hints:off --run",
+    "lisp": "sbcl --script",
+    "kit": "kitc --run",
+    "v": "v run",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+    "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "sml": "cd $dir && sml $fileName",
+    "mojo": "mojo run"
+  },
+  "code-runner.runInTerminal": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.renderWhitespace": "all",
+  "editor.codeActionsOnSave": {},
+  "python.diagnostics.sourceMapsEnabled": true,
+  "files.insertFinalNewline": true,
+  "json.schemaDownload.enable": false,
+
+  "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?　、。「」【】『』（）！？てにをはがのともへでや",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "[tex]": {
+    // スニペット補完中にも補完を使えるようにする
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    // インデント幅を2にする
+    "editor.tabSize": 2
+  },
+
+  "[latex]": {
+    // スニペット補完中にも補完を使えるようにする
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    // インデント幅を2にする
+    "editor.tabSize": 2
+    // "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+
+  "[bibtex]": {
+    // インデント幅を2にする
+    "editor.tabSize": 2
+  },
+
+  // ---------- LaTeX Workshop ----------
+
+  // 使用パッケージのコマンドや環境の補完を有効にする
+  "latex-workshop.intellisense.package.enabled": true,
+
+  // 生成ファイルを削除するときに対象とするファイル
+  // デフォルト値に "*.synctex.gz" を追加
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.snm",
+    "*.nav",
+    "*.dvi",
+    "*.synctex.gz"
+  ],
+
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk",
+      "tools": ["latexmk"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-e",
+        "$latex=q/platex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
+        "-e",
+        "$bibtex=q/upbibtex %O %B/",
+        "-e",
+        "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
+        "-e",
+        "$makeindex=q/upmendex %O -o %D %S/",
+        "-e",
+        "$dvipdf=q/dvipdfmx %O -o %D %S -f msembed.map/",
+        "-norc",
+        "-pdfdvi",
+        "%DOC%"
+      ]
+    }
+  ],
+  "latex-workshop.message.update.show": false,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.unicodeHighlight.ambiguousCharacters": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "never"
+}

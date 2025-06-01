@@ -1,0 +1,210 @@
+{
+  "[bibtex]": {
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "[json][jsonc]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": true
+  },
+  "[latex]": {
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.tabSize": 2
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+  },
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultColorDecorators": "never",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "gitlens.codeLens.symbolScopes": ["!Module"]
+  },
+  "[tex]": {
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+  },
+  "[yaml][dockercompose][github-actions-workflow]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.insertSpaces": true,
+    "editor.quickSuggestions": {
+      "comments": false,
+      "other": true,
+      "strings": true
+    },
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": true
+  },
+  "breadcrumbs.enabled": true,
+  "cSpell.ignorePaths": [".vscode"],
+  "diffEditor.experimental.useTrueInlineView": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.markdownlint": "explicit"
+  },
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line-thin",
+  "editor.dragAndDrop": false,
+  "editor.fontFamily": "Consolas, 'Courier New', monospace",
+  "editor.fontSize": 16,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "editor.formatOnType": false,
+  "editor.gotoLocation.multipleDeclarations": "gotoAndPeek",
+  "editor.gotoLocation.multipleDefinitions": "gotoAndPeek",
+  "editor.gotoLocation.multipleImplementations": "gotoAndPeek",
+  "editor.gotoLocation.multipleTypeDefinitions": "gotoAndPeek",
+  "editor.guides.bracketPairs": true,
+  "editor.insertSpaces": true,
+  "editor.minimap.maxColumn": 80,
+  "editor.minimap.scale": 2,
+  "editor.minimap.showSlider": "always",
+  "editor.renderControlCharacters": true,
+  "editor.renderLineHighlight": "all",
+  "editor.renderLineHighlightOnlyWhenFocus": true,
+  "editor.renderWhitespace": "all",
+  "editor.roundedSelection": true,
+  "editor.scrollBeyondLastLine": true,
+  "editor.smoothScrolling": true,
+  "editor.suggestSelection": "first",
+  "editor.trimAutoWhitespace": true,
+  "editor.unicodeHighlight.ambiguousCharacters": true,
+  "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?　、。「」【】『』（）！？てにをはがのともへでや",
+  "editor.wordWrap": "on",
+  "errorLens.excludeBySource": ["cSpell"],
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.autoGuessEncoding": true,
+  "files.autoSave": "off",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "git.autofetch": true,
+  "json.schemaDownload.enable": true,
+  "latex-workshop.intellisense.package.enabled": true,
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.snm",
+    "*.nav",
+    "*.dvi",
+    "*.synctex.gz"
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk",
+      "tools": ["latexmk"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "args": [
+        "-e",
+        "$latex=q/platex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
+        "-e",
+        "$bibtex=q/upbibtex %O %B/",
+        "-e",
+        "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
+        "-e",
+        "$makeindex=q/upmendex %O -o %D %S/",
+        "-e",
+        "$dvipdf=q/dvipdfmx %O -o %D %S -f msembed.map/",
+        "-norc",
+        "-pdfdvi",
+        "%DOC%"
+      ],
+      "command": "latexmk",
+      "name": "latexmk"
+    }
+  ],
+  "latex-workshop.view.pdf.viewer": "tab",
+  "markdown-pdf.highlightStyle": "default.css",
+  "markdownlint.config": {
+    "MD010": false,
+    "MD025": false,
+    "MD033": false,
+    "MD034": false
+  },
+  "markdownlint.run": "onSave",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.enableMultiLinePasteWarning": "auto",
+  "terminal.integrated.env.windows": {
+    "PSExecutionPolicyPreference": "Bypass"
+  },
+  "terminal.integrated.fontSize": 14,
+  "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+  "workbench.colorCustomizations": {
+    "editorIndentGuide.activeBackground1": "#fff",
+    "editorIndentGuide.activeBackground2": "#fff",
+    "editorIndentGuide.activeBackground3": "#fff",
+    "editorIndentGuide.activeBackground4": "#fff",
+    "editorIndentGuide.activeBackground5": "#fff",
+    "editorIndentGuide.activeBackground6": "#fff",
+    "editorIndentGuide.background1": "#b22222",
+    "editorIndentGuide.background2": "#ff4500",
+    "editorIndentGuide.background3": "#ffd700",
+    "editorIndentGuide.background4": "#228b22",
+    "editorIndentGuide.background5": "#000080",
+    "editorIndentGuide.background6": "#8b008b"
+  },
+  // "files.autoSaveDelay": 1000,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.tree.renderIndentGuides": "always",
+  "yaml.format.enable": true
+}

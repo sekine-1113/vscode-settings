@@ -1,9 +1,9 @@
 {
-  "[bibtex]": {
-    "editor.tabSize": 2
-  },
+  "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 4}",
   "[javascript]": {
-    "editor.maxTokenizationLineLength": 2500
+    "editor.maxTokenizationLineLength": 2500,
+    "javascript.preferences.quoteStyle": "single",
+    "editor.tabSize": 2,
   },
   "[json][jsonc]": {
     "editor.autoIndent": "advanced",
@@ -15,10 +15,6 @@
     "editor.tabSize": 2,
     "files.insertFinalNewline": true
   },
-  "[latex]": {
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.tabSize": 2
-  },
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     "editor.formatOnPaste": true,
@@ -28,26 +24,31 @@
   "[python]": {
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.defaultColorDecorators": "never",
+    "gitlens.codeLens.symbolScopes": [
+      "!Module"
+    ],
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
-    "gitlens.codeLens.symbolScopes": ["!Module"]
-  },
-  "[tex]": {
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "editor.tabSize": 2
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.tabSize": 4,
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "prettier.singleQuote": true,
+    "typescript.preferences.quoteStyle": "single",
+    "typescript.locale": "ja",
+    "editor.tabSize": 2,
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
-    "editor.formatOnType": true
+    "editor.formatOnType": true,
+    "editor.tabSize": 2,
   },
   "[yaml][dockercompose][github-actions-workflow]": {
     "editor.autoIndent": "advanced",
@@ -64,9 +65,32 @@
     "editor.tabSize": 2,
     "files.insertFinalNewline": true
   },
-  "breadcrumbs.enabled": true,
-  "cSpell.ignorePaths": [".vscode"],
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "workbench.startupEditor": "none",
   "diffEditor.experimental.useTrueInlineView": true,
+  "explorer.compactFolders": false,
+  "editor.insertSpaces": true,
+  "editor.scrollBeyondLastLine": true,
+  "breadcrumbs.enabled": true,
+  "cSpell.ignorePaths": [
+    "package-lock.json",
+    "node_modules",
+    "vscode-extension",
+    ".git/{info,lfs,logs,refs,objects}/**",
+    ".git/{index,*refs,*HEAD}",
+    ".vscode",
+    ".vscode-insiders",
+    "settings.json"
+  ],
+  "cSpell.ignoreWords": [
+    "venv",
+    "pycache",
+    "sekine",
+    "mdurl",
+    "pygments"
+  ],
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.codeActionsOnSave": {
@@ -88,7 +112,6 @@
   "editor.gotoLocation.multipleImplementations": "gotoAndPeek",
   "editor.gotoLocation.multipleTypeDefinitions": "gotoAndPeek",
   "editor.guides.bracketPairs": true,
-  "editor.insertSpaces": true,
   "editor.minimap.maxColumn": 80,
   "editor.minimap.scale": 2,
   "editor.minimap.showSlider": "always",
@@ -97,15 +120,15 @@
   "editor.renderLineHighlightOnlyWhenFocus": true,
   "editor.renderWhitespace": "all",
   "editor.roundedSelection": true,
-  "editor.scrollBeyondLastLine": true,
   "editor.smoothScrolling": true,
   "editor.suggestSelection": "first",
   "editor.trimAutoWhitespace": true,
   "editor.unicodeHighlight.ambiguousCharacters": true,
   "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?　、。「」【】『』（）！？てにをはがのともへでや",
   "editor.wordWrap": "on",
-  "errorLens.excludeBySource": ["cSpell"],
-  "explorer.compactFolders": false,
+  "errorLens.excludeBySource": [
+    "cSpell"
+  ],
   "explorer.confirmDragAndDrop": false,
   "files.autoGuessEncoding": true,
   "files.autoSave": "off",
@@ -114,60 +137,6 @@
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "json.schemaDownload.enable": true,
-  "latex-workshop.intellisense.package.enabled": true,
-  "latex-workshop.latex.clean.fileTypes": [
-    "*.aux",
-    "*.bbl",
-    "*.blg",
-    "*.idx",
-    "*.ind",
-    "*.lof",
-    "*.lot",
-    "*.out",
-    "*.toc",
-    "*.acn",
-    "*.acr",
-    "*.alg",
-    "*.glg",
-    "*.glo",
-    "*.gls",
-    "*.ist",
-    "*.fls",
-    "*.log",
-    "*.fdb_latexmk",
-    "*.snm",
-    "*.nav",
-    "*.dvi",
-    "*.synctex.gz"
-  ],
-  "latex-workshop.latex.recipes": [
-    {
-      "name": "latexmk",
-      "tools": ["latexmk"]
-    }
-  ],
-  "latex-workshop.latex.tools": [
-    {
-      "args": [
-        "-e",
-        "$latex=q/platex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
-        "-e",
-        "$bibtex=q/upbibtex %O %B/",
-        "-e",
-        "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
-        "-e",
-        "$makeindex=q/upmendex %O -o %D %S/",
-        "-e",
-        "$dvipdf=q/dvipdfmx %O -o %D %S -f msembed.map/",
-        "-norc",
-        "-pdfdvi",
-        "%DOC%"
-      ],
-      "command": "latexmk",
-      "name": "latexmk"
-    }
-  ],
-  "latex-workshop.view.pdf.viewer": "tab",
   "markdown-pdf.highlightStyle": "default.css",
   "markdownlint.config": {
     "MD010": false,
@@ -204,7 +173,10 @@
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
-  "workbench.startupEditor": "none",
   "workbench.tree.renderIndentGuides": "always",
-  "yaml.format.enable": true
+  "yaml.format.enable": true,
+  "python.defaultInterpreterPath": "c:\\Users\\sekin\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
 }
